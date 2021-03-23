@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Владимир Русетский](https://up.htmlacademy.ru/adaptive/22/user/1728289).
-* Наставник: `Arthur Litovko`.
+* Наставник: Arthur Litovko.
 
 ---
 
