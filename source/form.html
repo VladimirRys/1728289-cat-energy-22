@@ -62,44 +62,47 @@
           <input class="radiobutton__input" type="radio" name="code" value="Похудение" checked>
           <span class="radiobutton__label">Не знаю (нужен ваш совет)</span>
         </label>
-      <div class="form__contact contact">
-        <h3 class="contact__title">Контактные данные (владельца кота)</h3>
-        <p class="contact__item">
-          <label>E-mail:*</label>
-          <input type="email" name="email" required placeholder="kuklachev@gmail.com"><img src="img/icon/icon_email.svg" alt="email">
-        </p>
-        <p class="contact__item">
-          <label>Телефон:*</label>
-          <input type="tel" name="tel" required placeholder="8 (960) 900-60-90"><img src="img/icon/phone 1.svg" alt="phone">
-        </p>
-      </div>
-      <div class="form__textarea textarea">
-        <h3 class="textarea__title">Комментарий</h3>
-        <p class="textarea__item">
-          <textarea name="comment" id="/" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </p>
-      </div>
-      <div class="form__checkbox checkbox">
-        <h3 class="checkbox__title"></h3>
-        <p class="checkbox__item">
-          <input type="checkbox" name="add" id="sugar" value="сахарозаменитель">
-          <label class="checkbox__label" for="sugar">cахарозаменитель</label>
-        </p>
-        <p class="checkbox__item">
-          <input type="checkbox" name="add" id="water" value="питьевая вода">
-          <label class="checkbox__label" for="water">питьевая вода</label>
-        </p>
-        <p class="checkbox__item">
-          <input type="checkbox" name="add" id="milk" value="молоко">
-          <label class="checkbox__label" for="milk">молоко</label>
-        </p>
-        <p class="checkbox__item">
-          <input type="checkbox" name="add" id="vitamin" value="витамины">
-          <label class="checkbox__label" for="vitamin">витамины</label>
-        </p>
-      </div>
-      <p class="form__butten butten"><button type="submit" value="отправить заявку"></p>
-      <p class="form__demand">* — Обязательные поля</p>
+        <div class="form__contact contact">
+          <h3 class="contact__title">Контактные данные (владельца кота)</h3>
+          <p class="contact__item">
+            <label class="contact__label" for="email">E-mail:*</label>
+            <input type="email" name="email" id="email" required placeholder="kuklachev@gmail.com"><img
+              src="img/icon/icon_email.svg" alt="email">
+          </p>
+          <p class="contact__item">
+            <label class="contack__label" for="tel" >Телефон:*</label>
+            <input type="tel" name="tel" id="tel" required placeholder="8 (960) 900-60-90"><img src="img/icon/phone 1.svg"
+              alt="phone">
+          </p>
+        </div>
+        <div class="form__textarea textarea">
+          <h3 class="textarea__title">Комментарий</h3>
+          <p class="textarea__item">
+            <textarea name="comment" id="/" cols="30" rows="8"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
+        </div>
+        <div class="form__checkbox checkbox">
+          <h3 class="checkbox__title"></h3>
+          <p class="checkbox__item">
+            <input type="checkbox" name="add" id="sugar" value="сахарозаменитель">
+            <label class="checkbox__label" for="sugar">cахарозаменитель</label>
+          </p>
+          <p class="checkbox__item">
+            <input type="checkbox" name="add" id="water" value="питьевая вода">
+            <label class="checkbox__label" for="water">питьевая вода</label>
+          </p>
+          <p class="checkbox__item">
+            <input type="checkbox" name="add" id="milk" value="молоко">
+            <label class="checkbox__label" for="milk">молоко</label>
+          </p>
+          <p class="checkbox__item">
+            <input type="checkbox" name="add" id="vitamin" value="витамины">
+            <label class="checkbox__label" for="vitamin">витамины</label>
+          </p>
+        </div>
+        <p class="form__butten butten"><button type="submit">отправить заявку</button></p>
+        <p class="form__demand">* — Обязательные поля</p>
     </form>
   </main>
   <footer class="page-footer">
@@ -134,4 +137,5 @@
     </div>
   </footer>
 </body>
+
 </html>
