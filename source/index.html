@@ -6,33 +6,37 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a href="/source/index.html" class="page-header__logo logo__image">
-        <img class="page-header__logo logo__text" src="img/logo-mobile.png" width="33" height="37" alt="Наш маскот">
-        <img src="img/logo 2.png" alt="Кот энерджи" class="page-header__logo logo-2" width="101" height="18">
+      <a href="/source/index.html" class="page-header__logo logo-section">
+        <div class="logo-section__wrapper">
+          <img class="logo-section__image logo__image" src="img/logo-mobile.svg" alt="Наш маскот" width="33" height="37" >
+          <img class="logo-section__text logo__text" src="img/logo 2.svg" alt="Кот энерджи" width="101" height="18">
+        </div>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="/">Главная</a>
+            </li>
+            <li class="site-list__item">
+             <a href="catalog.html">
+               Каталог Продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+               Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="/">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Каталог Продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
     </header>
     <main class="page-main">
-      <section class="promo">
+      <section class="page-main__promo promo">
         <div class="promo__wrapper">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
@@ -44,68 +48,62 @@
           </div>
         </div>
       </section>
-      <section class="product">
+      <section class="page-main__product product">
         <div class="product__wrapper">
           <ul class="product__list">
-            <li class="product__item product__item--slimming">
-              <img>
+            <li class="product__item product__item--slim">
+              <img src="img/cat_back_slim.svg" alt="Кот слим" width="50" height="53">
               <h3 class="product__title">похудение</h3>
               <p class="product__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <div class="product__more">
                 <a href="#">
                   <span>Каталог slim</span>
-                  <img src="#">
+                  <img src="img/icon/icon_arrow.svg" width="32"  height="10">
                 </a>
               </div>
             </li>
             <li class="product__item product__item--pro">
-              <img>
+              <img src="img/cat_back_pro.svg" alt="Кот Про" width="67" height="50">
               <h3 class="product__title">набор массы</h3>
               <p class="product__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <div class="product__more">
                 <a href="#">
-                  <span>Каталог slim</span>
-                  <img src="#">
+                  <span>Каталог pro</span>
+                  <img src="img/icon/icon_arrow.svg" width="32"  height="10">
                 </a>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="special">
+      <section class="page-main__special special">
         <div class="special__wrapper">
           <h2 class="special__title">Как это работает</h2>
           <ul class="special__list">
             <li class="special__item">
-              <img src="" alt="" class="special__item-image">
-              <p class="special__item-intro">Функциональное питание
-                содержит только полезные
-                питательные вещества.</p>
+              <img src="img/special_item1.svg" alt="Функциональное питание" class="special__item-image" width="60" height="60">
+              <p class="special__item-intro">Функциональное питание содержит только полезные питательные вещества.</p>
               <p class="special__item-number">1</p>
             </li>
             <li class="special__item">
-              <img src="" alt="" class="special__item-image">
-              <p class="special__item-intro">Выпускается в виде порошка,
-                который нужно лишь залить
-                кипятком и готово.</p>
+              <img src="img/special_item2.svg" alt="Выпускается в виде порошка" class="special__item-image" width="60" height="60">
+              <p class="special__item-intro">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
               <p class="special__item-number">2</p>
             </li>
             <li class="special__item">
-              <img src="" alt="" class="special__item-image">
-              <p class="special__item-intro">Замените один-два приема
-                обычной еды на наше
-                функциональное питание.</p>
+              <img src="img/special_item3.svg" alt="Обычная еда" class="special__item-image" width="60" height="60">
+              <p class="special__item-intro">Замените один-два приема обычной еды на наше функциональное питание.</p>
               <p class="special__item-number">3</p>
             </li>
             <li class="special__item">
-              <img src="" alt="" class="special__item-image">
+              <img src="img/special_item4.svg" alt="Наслаждайтесь изменениями" class="special__item-image" width="60" height="60">
               <p class="special__item-intro">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
               <p class="special__item-number">4</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="example">
+      <section class="page-main__example example">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
@@ -123,14 +121,15 @@
               <dt class="example__module-number">
                 60 дней
               </dt>
-              <dd class="example_module-description">
+              <dd class="example__module-description">
                 затрачено<br>
                 времени
               </dd>
             </div>
           </div>
-          <p class="example__cost">затраты на питание</p>
-          <img src="" alt="" class="example__picture">
+          <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
+          <img src="img/before-mobile 1.png" alt="было" class="example__picture">
+          <img src="img/after-mobile 1.png" alt="стало" class="example__picture">
           <div class="example__toggles slider__toggle">
             <p class="slider__text">Было</p>
             <p class="slider__toggles">
@@ -145,29 +144,26 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts contacts">
-          <p class="contact__title">приглашаем
-            к сотрудничеству дилеров!</p>
-          <p class="contacts__text">ул. Большая<br>
-            Конюшенная, д. 19/8<br>
-            Санкт-Петербург</p>
+          <p class="contact__title">приглашаем<br>к сотрудничеству<br>дилеров!</p>
+          <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
           <img src="" alt="" class="contact__cards">
-          <img src="" alt="" class="contact__logo logo__text">
+          <img src="img/logo 2.svg" alt="" class="contact__logo logo__text" width="128" height="24">
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><img src="img/icon/icon_vkontakte.svg" alt="Мы в Вконтакте" width="22" height="22"></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><img src="img/icon/icon_instagram.svg" alt="Мы в Инстаграме" width="22" height="22"></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img src="img/icon/icon_facebook.svg" alt="Мы в Фейсбуке" width="22" height="22"></a>
               </li>
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
             <b class="copyright__text">HTML Academy:</b>
-            <a class="copyright__link" href="https://htmlacademy.ru"><img src="" alt=""></a>
+            <a class="copyright__link" href="https://htmlacademy.ru"><img src="img/htmlacademy.svg" alt="htmlacademy" width="27" height="34"></a>
           </div>
         </div>
       </div>
