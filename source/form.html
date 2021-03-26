@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <a href="/source/index.html" class="page-header__logo logo-section">
+      <div class="logo-section__wrapper">
+        <img class="logo-section__image" src="img/logo-mobile.svg" alt="Наш маскот" width="33" height="37">
+        <img class="logo-section__text" src="img/logo 2.svg" alt="Кот энерджи" width="101" height="18">
+      </div>
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="/">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог Продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">Подбор программы</h1>
+    <p class="page-main__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <section class="page-main__form form">
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <div class="form__input-name input-name container">
+          <p class="input-name__item">
+            <label>Имя:*</label>
+            <input type="text" name="first_name" required placeholder="Барсик">
+          </p>
+          <p class="input-name__item">
+            <label>Вес (КГ):*</label>
+            <input type="number" name="weight" required placeholder="7">
+          </p>
+          <p class="input-name__item">
+            <label>Возраст (ЛЕТ):*</label>
+            <input type="number" name="age" placeholder="7">
+          </p>
+        </div>
+        <div class="form__radiobutton">
+          <p class="form__radiobutton">
+            <label>
+              <input type="radio" name="cond" checked>Похудение
+            </label>
+          </p>
+          <p class="radiobutton__item">
+            <label>
+              <input type="radio" name="cond">Набор массы
+            </label>
+          </p>
+          <p class="radiobutton__item">
+            <label>
+              <input type="radio" name="cond">Не знаю (нужен ваш совет)
+            </label>
+          </p>
+        </div>
+        <div class="form__contact contact">
+          <h3 class="contact__title">Контактные данные (владельца кота)</h3>
+          <p class="contact__item">
+            <label>e-mail:*</label>
+            <input type="email" name="email" required placeholder="kuklachev@gmail.com"><img src="img/icon/icon_email.svg" alt="email">
+          </p>
+          <p class="contact__item">
+            <label>Телефон:*</label>
+            <input type="tel" name="tel" required placeholder="8 (960) 900-60-90"><img src="img/icon/phone 1.svg" alt="phone">
+          </p>
+        </div>
+        <div class="form__textarea textarea">
+          <h3 class="textarea__title">Комментарий</h3>
+          <p class="textarea__item">
+            <textarea name="comment" id="/" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
+        </div>
+        <div class="form__checkbox checkbox">
+          <h3 class="checkbox__title"></h3>
+          <p class="checkbox__item"><input type="checkbox" name="add" value="сахарозаменитель">сахарозаменитель</p>
+          <p class="checkbox__item"><input type="checkbox" name="add" value="питьевая вода">питьевая вода</p>
+          <p class="checkbox__item"><input type="checkbox" name="add" value="молоко">молоко</p>
+          <p class="checkbox__item"><input type="checkbox" name="add" value="витамины">витамины</p>
+        </div>
+        <p class="form__butten butten"><input type="submit" value="отправить заявку"></p>
+        <p class="form__demand">* — Обязательные поля</p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
