@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+body {
+  background-color: red;
+}
+
+
+@import "normalize.less";
+
+body {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+@import "blocks/page-body.less";
+
