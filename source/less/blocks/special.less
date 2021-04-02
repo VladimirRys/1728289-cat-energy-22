@@ -1,0 +1,48 @@
+// @import "blocks/special.less";
+
+.spesial__wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.special__title {
+  font-family: "Oswaldregular", "Ariel", sans-serif;
+  font-size: 36px;
+  margin: 27px 0 0 20px;
+  // text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 52px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.special__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 38px 20px 42px 20px;
+}
+
+.special__item {
+  margin-bottom: 20px;
+  display: flex;
+
+  & p {
+    margin-left: 20px;
+    font-family: "Ariel", "Oswaldregular", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .special__list {
+    list-style: none;
+  }
+}
+

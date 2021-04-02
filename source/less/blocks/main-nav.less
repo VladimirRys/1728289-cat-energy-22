@@ -1,0 +1,29 @@
+// @import ("blocks/main-nav.less")
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__list a {
+  text-decoration: none;
+  color: #000000;
+
+  @media (min-width: @desktop-width) {
+    color: white;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+

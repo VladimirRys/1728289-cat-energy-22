@@ -1,11 +1,35 @@
+// @import ("blocks/page-header")
+
 .page-header {
-  background-color: white;
-  margin: 10 20 20 20;
-  padding: 0;
-  min-width: 320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  padding: 0;
+  margin: 11px 20px 17px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
+.page-header__logo {
+  height: 37px;
 
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 60px;
+  }
+}
+
+.page-header__main-nav {
+  background-color: rosybrown;
+}
