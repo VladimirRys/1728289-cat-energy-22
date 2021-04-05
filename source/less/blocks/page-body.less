@@ -9,4 +9,21 @@
   margin: 0;
   background-color: #ffffff;
   color: #000000;
+
+  & hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 0;
+
+    @media (min-width: @tablet-width) {
+      background-color: #e6e6e6;
+      height: 1px;
+      width: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
 }

@@ -10,13 +10,15 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a href="/source/index.html" class="page-header__logo logo-section">
-      <div class="logo-section__wrapper">
-        <img class="logo-section__log-image" src="img/logo-mobile.svg" alt="Наш маскот" width="33" height="37">
-        <img class="logo-section__logo-text logo-text" src="img/logo 2.svg" alt="Кот энерджи" width="101" height="18">
-      </div>
+    <a href="/source/index.html" class="page-header__logo">
+      <picture>
+        <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/logo/logo-tablet.svg">
+        <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
+        <img class="page-header__log-image" src="img/logo/logo-mobile.svg" alt="Наш маскот" width="33" height="37">
+      </picture>
     </a>
-    <nav class="main-nav">
+    <img class="page-header__logo-text" src="img/logo/logo 2.svg" alt="Кот энерджи" width="101" height="18">
+    <nav class="page-header__main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -36,13 +38,22 @@
   <main class="page-main">
     <section class="page-main__promo promo">
       <div class="promo__wrapper">
+        <!-- <picture>
+          <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/main_desktop.png">
+          <source media="(min-width: 1200px)" srcset="img/main_desktop.png">
+          <img class="page-header__start-img" src="img/start-img.svg" alt="Наш маскот">
+        </picture> -->
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись и котом!</p>
         <p class="promo__picture">
-          <img src="img/cup/index-can-mobile 1.png" alt="Энергетик для усатых">
+          <picture>
+            <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/cup/index-can-tablet.svg">
+            <source media="(min-width: 1200px)" srcset="img/cup/index-can--desktop.svg">
+            <img  src="img/cup/index-can-mobile.svg" alt="Энергетик для усатых">
+          </picture>
         </p>
-        <div>
-          <button type="button" class="button promo__choose-program">Подобрать программу</button>
+        <div class="promo__choose-program">
+          <button type="button" class="button">Подобрать программу</button>
         </div>
       </div>
     </section>
@@ -100,31 +111,36 @@
         </ol>
       </div>
     </section>
+    <hr>
     <section class="page-main__example example">
       <div class="example__wrapper container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов в день. </p>
-        <dl class="example__module-list">
-          <div class="example__module-item">
-            <dt class="example__module-number">
-              5 КГ
-            </dt>
-            <dd class="example__module-description">
-              снижение веса
-            </dd>
-          </div>
-          <div class="example__module-item">
-            <dt class="example__module-number">
-              60 дней
-            </dt>
-            <dd class="example__module-description">
-              затрачено времени
-            </dd>
-          </div>
-        </dl>
-        <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
+        <div class="example__main">
+          <dl class="example__module-list">
+            <div class="example__module-item">
+              <img src="img/weight back.svg" alt="" class="example_img">
+              <dt class="example__module-number">
+                5 КГ
+              </dt>
+              <dd class="example__module-description">
+                снижение веса
+              </dd>
+            </div>
+            <div class="example__module-item">
+              <img src="img/weight back.svg" alt="" class="example_img">
+              <dt class="example__module-number">
+                60 дней
+              </dt>
+              <dd class="example__module-description">
+                затрачено времени
+              </dd>
+            </div>
+          </dl>
+          <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
+        </div>
         <div class="example__slider-main slider-main">
           <img src="img/before-mobile 1.png" alt="было" class="slider-main__picture">
           <img src="img/after-mobile 1.png" alt="стало" class="slider-main__picture">
@@ -138,12 +154,15 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <address class="page-footer__contacts contacts">
+    <address class="page-footer__contacts contacts">
+      <div class="contacts__wrapper">
         <p class="contacts__title">приглашаем<br>к сотрудничеству<br>дилеров!</p>
         <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
-        <img src="" alt="" class="contacts__cards">
-        <img src="img/logo 2.svg" alt="" class="contacts__logo-text logo-text" width="128" height="24">
+      </div>
+      <img src="img/location.svg" alt="Наш адрес" class="page-footer__cards">
+      <div class="page-footer__wrapper">
+        <img src="img/logo/logo 2.svg" alt="Кот энерджи" class="page-footer__logo-text logo-text" width="128" height="24">
+        <hr>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -160,13 +179,14 @@
             </li>
           </ul>
         </div>
+        <hr>
         <small class="page-footer__copyright copyright">
           <b class="copyright__text">HTML Academy:</b>
           <a class="copyright__link" href="https://htmlacademy.ru"><img src="img/htmlacademy.svg" alt="htmlacademy"
               width="27" height="34"></a>
         </small>
-      </address>
-    </div>
+      </div>
+    </address>
   </footer>
 </body>
 </html>

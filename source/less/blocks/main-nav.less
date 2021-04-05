@@ -4,6 +4,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  // display: none;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .main-nav__list a {
@@ -21,9 +31,8 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
+// @media (min-width: @desktop-width) {
+//   .main-nav__toggle {
+//     display: none;
+//   }
+// }

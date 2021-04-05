@@ -5,31 +5,32 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  height: 37px;
   padding: 0;
   margin: 11px 20px 17px 20px;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-  }
-}
-
-.page-header__logo {
-  height: 37px;
-
-
-  @media (min-width: @tablet-width) {
+    min-width: 728px;
     height: 52px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 1160px;
     height: 60px;
   }
 }
 
-.page-header__main-nav {
-  background-color: rosybrown;
+.page-header__log-image {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-text {
+    display: none;
+  }
 }

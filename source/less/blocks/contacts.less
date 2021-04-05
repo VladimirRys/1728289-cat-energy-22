@@ -1,0 +1,52 @@
+// @import ("blocks/contacts.less")
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 201px;
+  }
+
+  @media (min-width: @desktop-width) {
+    ::after {
+      content: "";
+      background-image: url("../img/location-desktop.svg");
+    }
+    width: 570px;
+  }
+}
+
+.contacts__title {
+  font-size: 16px;
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 28px 0 28px 19px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    margin: 66px 0 51px 70px;
+  }
+}
+
+.contacts__text {
+  font-size: 14px;
+  font-family: "Arial", "Oswaldregular", sans-serif;
+  line-height: 20px;
+  margin: 28px 19px 28px 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    margin: 62px 70px 58px 280px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 62px 89px 60px 87px;
+  }
+}
